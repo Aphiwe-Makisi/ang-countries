@@ -1,11 +1,13 @@
 .input-group {
- width: 500px;
+  width: 85%;
   overflow: hidden;
   box-shadow: var(--box-shadow-effect);
+  background-color: white;
 }
 
 input {
   flex: 1;
+  /* min-width: 450px; */
   border: none;
   outline: none;
 }
@@ -21,10 +23,11 @@ select {
 
 select {
   height: 65px;
-  box-shadow: var(--box-shadow-effect)
+  box-shadow: var(--box-shadow-effect);
 }
 
-input, button {
+input,
+button {
   height: 65px;
   border: none;
   padding: none;
@@ -34,6 +37,10 @@ input, button {
 @media (max-width: 775px) {
   .container {
     flex-direction: column;
+  }
+
+  .input-group {
+    width: 100%;
   }
 
   select {

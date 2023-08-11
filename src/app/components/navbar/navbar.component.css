@@ -1,3 +1,10 @@
 .navbar {
   box-shadow: var(--box-shadow-effect)
 }
+
+.mt-5 {
+  padding-top: 92px;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
