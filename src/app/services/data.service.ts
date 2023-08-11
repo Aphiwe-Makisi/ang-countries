@@ -10,6 +10,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   fetchAll(): Observable<any> {
-    return this.http.get('https://restcountries.com/v3.1/all?fields=name,region,flags,population')
+    return this.http.get('https://restcountries.com/v3.1/all?fields=name,region,flags,population,capital')
   }
 }

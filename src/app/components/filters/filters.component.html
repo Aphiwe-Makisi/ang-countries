@@ -1,15 +1,21 @@
 <div class="container d-flex justify-content-between p-0">
-  <div class="form-group">
-    <span><i class="fa-solid fa-magnifying-glass"></i></span>
-    <input type="text" placeholder="Search for a city" class="form-control">
-  </div>
+  <div class="row w-100 m-0">
+    <div class="col-md-6 p-0">
+      <div class="input-group rounded">
+        <button class="ps-3 pe-3"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" placeholder="Search for a city">
+      </div>
+    </div>
 
-  <select class="form-select form-select-lg w-25 m-0">
-    <option selected disabled><small>Filter by region</small></option>
-    <option>Africa</option>
-    <option>America</option>
-    <option>Asia</option>
-    <option>Europe</option>
-    <option>Oceania</option>
-  </select>
+    <div class="col-md-6 d-flex justify-content-end p-0 left-column">
+      <select class="form-select form-select-lg m-0">
+        <option selected disabled><small>Filter by region</small></option>
+        <option>Africa</option>
+        <option>America</option>
+        <option>Asia</option>
+        <option>Europe</option>
+        <option>Oceania</option>
+      </select>
+    </div>
+  </div>
 </div>

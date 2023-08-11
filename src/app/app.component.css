@@ -1,6 +1,7 @@
 .card {
   height: 388px;
   max-width: 304px;
+  box-shadow: var(--box-shadow-effect);
 }
 
 .card-img-top {

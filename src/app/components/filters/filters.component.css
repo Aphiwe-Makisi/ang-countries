@@ -1,39 +1,46 @@
+.input-group {
+ width: 500px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow-effect);
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
 option {
   font-size: small;
 }
 
 select {
   font-size: small;
-}
-
-input, select {
-  height: 65px;
-  box-shadow: 0px 0px 23px -1px rgba(189,189,189,0.75);
--webkit-box-shadow: 0px 0px 23px -1px rgba(189,189,189,0.75);
--moz-box-shadow: 0px 0px 23px -1px rgba(189,189,189,0.75);
-}
-
-select {
   max-width: 200px;
 }
 
-input[type='text']::placeholder {
-  font-size: small;
-  color: grey;
-  padding-left: 10px;
-  position: relative;
+select {
+  height: 65px;
+  box-shadow: var(--box-shadow-effect)
 }
 
-input[type='text'] {
-  width: 400px;
-  padding-left: 50px;
+input, button {
+  height: 65px;
+  border: none;
+  padding: none;
+  background-color: transparent;
 }
 
-span {
-  position: absolute;
-  z-index: 1;
-  padding: 5px;
-  padding-top: 8px;
-  padding-left: 25px;
-  color: grey;
+@media (max-width: 775px) {
+  .container {
+    flex-direction: column;
+  }
+
+  select {
+    margin-top: 30px !important;
+  }
+
+  .left-column {
+    justify-content: start !important;
+  }
 }
