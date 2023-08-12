@@ -1,0 +1,23 @@
+.mt-5 {
+  padding-top: 92px;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+.card {
+  height: 388px;
+  max-width: 304px;
+  box-shadow: var(--box-shadow-effect);
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.06);
+}
+
+.card-img-top {
+  min-height: 204px;
+}
+

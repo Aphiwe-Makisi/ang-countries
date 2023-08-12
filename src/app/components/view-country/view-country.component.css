@@ -1,0 +1,8 @@
+.container {
+  padding-top: 110px !important;
+}
+
+button {
+  box-shadow: var(--box-shadow-effect);
+  min-width: 120px;
+}

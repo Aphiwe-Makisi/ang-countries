@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="mt-5">
+      <app-filters (filter)="filterByRegion($event)"></app-filters>
+    </div>
+
+    <div class="row mt-4 justify-content-center">
+      <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center p-0" *ngFor="let country of filteredCountries">
+        <div class="card m-2">
+            <img [src]="country.flags.png" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{ country.name.common }}</h5>
+            <p class="card-text m-0">Population: {{ country.population | number }}</p>
+            <p class="card-text m-0">Region: {{ country.region }}</p>
+            <p class="card-text m-0">Capital: {{ country.capital }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

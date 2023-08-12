@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FiltersComponent } from './components/filters/filters.component';
 import { HttpClientModule } from "@angular/common/http";
+import { ViewCountryComponent } from './components/view-country/view-country.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FiltersComponent,
+    ViewCountryComponent,
+    NotFoundComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
