@@ -8,9 +8,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class FiltersComponent {
 
   @Output() filter = new EventEmitter<string>()
+  @Output() search = new EventEmitter<string>()
+
 
   assignRegion(value: any) {
     this.filter.emit(value)
+  }
+
+  searchByCountryName(value: any) {
+    this.search.emit(value)
   }
 
 }
